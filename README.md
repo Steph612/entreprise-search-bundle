@@ -8,8 +8,8 @@ composer require stay612/recherche-entreprises-bundle
 
 ## ⚙️ Configuration (optionnelle)
 ```yaml
-# config/packages/stay612_entreprise_search.yaml
-stay612_recherche_entreprises:
+# config/packages/steph612_entreprise_search.yaml
+steph612_entreprise_search:
   timeout: 10
 # Timeout en secondes (défaut: 10)
 ```
@@ -43,9 +43,10 @@ $entreprise = $this->entrepriseClient->findBySiren('652014051');if ($entreprise)
 ### Commande Console
 ```bash
 # Recherche simple
-php bin/console recherche-entreprise:search carrefour
+php bin/console steph612:search-entreprise carrefour
+
 # Par SIREN (détails complets)
-php bin/console recherche-entreprise:search 652014051 --siren
+php bin/console steph612:search-entreprise 652014051 --siren
 ```
 
 ### 📊 Modèles
@@ -55,7 +56,7 @@ php bin/console recherche-entreprise:search 652014051 --siren
 
 ### 🧪 Tests
 ```bash
-composer test
+vendor/bin/phpunit --testdox
 ```
 
 ### 📝 Licence

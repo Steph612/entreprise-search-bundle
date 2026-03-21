@@ -33,8 +33,8 @@ class SearchEntrepriseCommand extends Command
             ->setHelp(
                 <<<'HELP'
                 <fg=bright-cyan>Exemples :</>
-                <info>symfony console app:search-entreprise 503932568 -s</info>                       Rechercher une SIREN
-                <info>php bin/console app:search-entreprise "carrefour" --page=2 --per-page=5</info>  Rechercher des entreprises <comment>[default: -p 1, -r 10]</comment>
+                <info>symfony console steph612:search-entreprise 503932568 -s</info>                       Rechercher une SIREN
+                <info>php bin/console steph612:search-entreprise "carrefour" --page=2 --per-page=5</info>  Rechercher des entreprises <comment>[default: -p 1, -r 10]</comment>
                 HELP
             );
         ;
