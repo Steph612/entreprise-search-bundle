@@ -1,0 +1,41 @@
+{
+    "name": "steph612/entreprise-search-bundle",
+    "description": "Bundle Symfony pour l'utilisation de l'API : Recherche d'entreprises du gouvernement français",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "symfony",
+        "bundle",
+        "entreprise",
+        "sirene",
+        "siren",
+        "api"
+    ],
+    "authors": [
+        {
+            "name": "Stéphane Raitano",
+            "email": "stay0612@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-kernel": "^7.4",
+        "symfony/dependency-injection": "^7.4",
+        "symfony/config": "^7.4",
+        "symfony/http-client": "^7.4",
+        "symfony/console": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5",
+        "symfony/phpunit-bridge": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Steph612\\EntrepriseSearchBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Steph612\\EntrepriseSearchBundle\\Tests\\": "tests/"
+        }
+    }
+}
